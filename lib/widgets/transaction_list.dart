@@ -27,7 +27,7 @@ class TransactionList extends StatelessWidget {
                  ),
                  padding: EdgeInsets.all(10),
                  child: Text(
-                   '\$${_transaction[index].amount}',             //this is string interpolation that replace the '+' concatenations
+                   '\$${_transaction[index].amount.toStringAsFixed(2)}',             //this is string interpolation that replace the '+' concatenations
                    style: TextStyle(
                        fontWeight: FontWeight.bold,
                        fontSize: 20,
